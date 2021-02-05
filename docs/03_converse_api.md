@@ -1,25 +1,7 @@
 ## 3. Converse API > Debug API
 
-Send requests to [Debug API](https://botpress.com/docs/channels/converse).
-
-### 3-1. Ruby Script
-
-In `/exec/exec_converse_api.rb`, assign values to `host`、`port`、`bot_id`、`user_id`、`matrix_chart`、`test_data`、`learning_data` and run `python exec_converse_api.py`.
-
-```ruby
-protocol      = 'https'
-host          = 'oasist-botpress-server.herokuapp.com'
-bot_id        = 'sample-bot-1'
-user_id       = 'oasist'
-matrix_chart  = "../csv/matrix_chart_#{Time.now.strftime("%Y%m%d")}.csv"
-test_data     = '../csv/test_data.csv'
-```
-
-A matrix chart will be created under `/csv/botpress_matrix_chart_{date}.csv`([Sample](https://github.com/oasis-forever/botpress_inspection_tool_kit_py/blob/master/csv/matrix_chart_20201120.csv)).
-
-### 3-2. Terminal
-
-Run `HTTP` command to check confidence one by one as follows.
+Send requests to [Debug API](https://botpress.com/docs/channels/converse).  
+Run `HTTP` command to check confidence one by one as follows if you have [HTTPie](https://httpie.io/) in your environment.
 
 ```bash
 $ http POST http://localhost:5000/api/v1/bots/sample-bot-1/converse/oasist/secured include==state,suggestions type=text text=GitHub 'Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlzaGlkYUByZWxpYS1kaWdpdGFsLmNvbSIsInN0cmF0ZWd5IjoiZGVmYXVsdCIsImlzU3VwZXJBZG1pbiI6dHJ1ZSwiaWF0IjoxNjAzMTY3MzA3LCJleHAiOjE2MDMxODg5MDcsImF1ZCI6ImNvbGxhYm9yYXRvcnMifQ.yML7o_n-wRY6dqNXVKOsO42zCkzAjSepfNAhUQH4RfU'
