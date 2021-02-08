@@ -4,7 +4,12 @@
 * rbenv 1.1.2-35-g0843745
 * ruby 2.7.2p137 (2020-10-01 revision 5445e04352) [x86_65-darwin19]
 
-## 2. Documents
+## 2. Blog Post
+
+* [Automation of Botpress Accuracy Inspection Vol.1 - CSV → JSON Converter -](https://oasist-blog-en.hatenablog.jp/entry/botpress_accuracy_inspection_vol1)
+* [Automation of Botpress Accuracy Inspection Vol.2 - Q&A Confidence Matric Chart](https://oasist-blog-en.hatenablog.jp/entry/botpress_accuracy_inspection_vol2)
+
+## 3. Documents
 
 1. [Preparation](https://github.com/oasis-forever/botpress_inspection_tool_kit_rb/blob/master/docs/01_preparation.md)
     1. [JSON File for Import](https://github.com/oasis-forever/botpress_inspection_tool_kit_rb/blob/master/docs/01_preparation.md#1-1-json-file-for-import)
