@@ -1,8 +1,8 @@
 ## 1. Enviroment
 
 * WSL(Ubuntu 20.04.1 LTS (GNU/Linux 4.19.128-microsoft-standard x86_64))
-* rbenv 1.1.2-44-gd604acb
-* ruby 3.0.0p0 (2020-12-25 revision 95aff21468) [x86_64-linux]
+* rbenv 1.1.2-50-g80af359
+* ruby 3.0.1p64 (2021-04-05 revision 0fb782ee38) [x86_64-linux]
 
 ## 2. Blog Post
 
