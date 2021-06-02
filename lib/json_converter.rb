@@ -15,10 +15,10 @@ class JsonConverter
   end
 
   def csv_to_hash
-    @obj = { qnas: gen_learning_data_arr(@csv_path) }
+    @obj = { qnas: gen_learning_data_arr(csv_path) }
   end
 
   def hash_to_json
-    write_json(@json_path, @obj)
+    write_json(json_path, obj)
   end
 end

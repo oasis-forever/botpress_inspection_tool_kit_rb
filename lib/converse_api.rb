@@ -20,8 +20,8 @@ class ConverseApi
       csv << set_header(test_data['Serial_Nums'])
       answers_arr = test_data['Answers']
       test_data.each do |test_datum|
-        @res = get_api_response(test_datum['Questions'], @url, @req)
-        csv << set_row(test_datum, answers_arr, @res.body)
+        @res = get_api_response(test_datum['Questions'], url, req)
+        csv << set_row(test_datum, answers_arr, res.body)
       end
     end
   end
