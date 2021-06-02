@@ -8,7 +8,7 @@ class ConverseApiTest < Minitest::Test
   def setup
     protocol      = 'https'
     host          = 'oasist-botpress-server.herokuapp.com'
-    bot_id        = 'sample-bot-1'
+    bot_id        = 'sample-bot'
     user_id       = 'oasist'
     @converse_api = ConverseApi.new(protocol, host, bot_id, user_id)
     @matrix_chart = "../csv/matrix_chart_#{Time.now.strftime("%Y%m%d")}.csv"
