@@ -35,7 +35,7 @@ Click a gear icon "Config", select `Japanese` in "Language" field and click "Sav
 
 ### 2-5. Import Q&A
 
-1. Click "Q&A" section, click "↓" button and select JSON file([Sample](https://github.com/oasis-forever/botpress_inspection_tool_kit_py/blob/master/json/learning_data.json)).  Select a radio button for an option and click "Submit".
+1. Click "Q&A" section, click "↓" button and select JSON file([Sample](https://github.com/oasis-forever/botpress_inspection_tool_kit_py/blob/master/json/training_data.json)).  Select a radio button for an option and click "Submit".
 ![Q&A](https://github.com/oasis-forever/botpress_inspection_tool_kit_py/blob/master/public/007.png)
 ![Q&A](https://github.com/oasis-forever/botpress_inspection_tool_kit_py/blob/master/public/008.png)
 ![Q&A](https://github.com/oasis-forever/botpress_inspection_tool_kit_py/blob/master/public/009.png)
