@@ -44,4 +44,8 @@ module Format
   def self.json_filename
     "training_data_#{DateTime.now.strftime('%F%T').gsub('-', '').gsub(':', '')}.json"
   end
+
+  def self.matrix_filename
+    "matrix_#{DateTime.now.strftime('%F').gsub('-', '').gsub(':', '')}.csv"
+  end
 end
