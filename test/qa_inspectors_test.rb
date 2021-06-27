@@ -10,11 +10,11 @@ class QaInspectorsTest < Minitest::Test
       scheme: 'https',
       host: 'oasist-botpress-server.herokuapp.com',
       bot_id: 'sample-bot',
-      user_id: 'oasist'
+      user_id: 'oasist',
+      test_data: '../csv/test_data.csv'
     )
-    @matrix_chart = "../csv/#{Format.matrix_filename}"
-    @test_data = '../csv/test_data.csv'
-    @qa_inspector.export_csv(@matrix_chart, @test_data)
+    @path = "../csv/#{Format.matrix_filename}"
+    @qa_inspector.export(@path)
   end
 
   def test_status_code
@@ -30,8 +30,8 @@ class QaInspectorsTest < Minitest::Test
   end
 
   def test_export_csv
-    test_rows_num = CSV.read(@test_data, headers: true)['Serial_Nums'].size
-    matrix_rows_num = CSV.read(@matrix_chart, headers: true)['Serial_Nums'].size
+    test_rows_num = CSV.read(@qa_inspector.test_data, headers: true)['Serial_Nums'].size
+    matrix_rows_num = CSV.read(@path, headers: true)['Serial_Nums'].size
     assert_equal test_rows_num, matrix_rows_num
   end
 end
